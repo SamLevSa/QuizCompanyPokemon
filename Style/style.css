@@ -1,0 +1,241 @@
+*{
+    margin: 0px; /*Redefine todas as margens da página*/
+    padding: 0px; /*Redefine todos os preenchimentos da página*/
+    box-sizing: border-box; /*Define a página com largura e altura adaptáveis*/
+
+}
+
+.gabarito{
+    display: flex; /*Deixa o conteúdo flexível*//*Organiza ele no centro horizontalmente*/
+    align-items: flex-start; /*Organiza ele no centro 
+    verticalmente*/
+    text-align: left;
+    flex-direction: column; /*Organiza ele verticalmente como coluna*/
+    font-family: arial, sans-serif;
+    font-weight: bold; /*Deixa a fonte em negrito*/
+    background-color: #b14141; /*cor do Background do texto*/
+    margin-top: 50px; /*Espaçamento da borda externa superior*/
+    padding-bottom:40px; /*Espaçamento da borda interna  abaixo*/
+    padding-left: 20px; /*Espaçamento da borda interna  esquerda*/
+    gap: 10px; /*Distânciamento entre cada questão*/
+    border-radius: 20px; /*Deixa a borda do bloco arredondada*/
+    width: 100%; /* comprende largura disponível de 100% do site*/
+    height: 100%; /* Compreende altura disponível de 100% do site*/
+    color: rgb(255, 255, 255); /*Deixa a cor do texto branca*/
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombrazinha leve */
+}
+
+.question{
+    display: none; /*Faz as questões com essa classe desaparecerem*/
+}
+
+.question-on{
+    display: block; /*Faz as questões que possuem essa classe aparecerem*/
+}
+
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão da página */
+    color: #333; /* Cor do texto geral */
+    margin: 0; /* Tira as margens padrão do navegador */
+    padding: 20px; /* Dá um espaço interno ao redor do conteúdo */
+    display: flex; /* Coloca o layout do body em flexbox */
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    align-items: center; /* Centraliza os itens no eixo horizontal */
+    min-height: 100vh; /* Faz o body ocupar altura inteira da tela */
+    
+    background-image: url('../imagens/img1.jpg'); /* Coloca a imagem de fundo */
+    background-size: cover; /* Faz a imagem preencher tudo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-attachment: fixed; /* Faz o fundo ficar fixo ao rolar */
+    background-color: #f4f4f9; /* Cor de fundo caso a imagem não carregue */
+}
+
+.timer{
+    display: block;
+    background-color: #909090; /*Cor de fundo do temporizador*/
+    color: white; /*Cor do texto do temporizador*/
+    font-family: arial, sans-serif; /*Tipo de fonte do texto*/
+    font-weight: bolder;/* Deixando a fonte mais forte com Negrito*/
+    padding: 20px; /*Distânciamento da borda interna*/
+    border-radius: 10px; /* Arredondamento da borda*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1); /* Sombra leve do container*/
+    height: fit-content; /*Altura do container*/
+    width: 300px; /*Largura do container*/
+    margin-bottom: 10px; /* Espaçamento da borda externa*/
+    
+}
+
+.ControlarTempo{
+    display: flex; /*Ajuste pro conteúdo ser flexível*/
+    justify-content: space-around; /* Centralizando o conteúdo de forma igual*/
+}
+
+#textoConfig{
+    margin-bottom: 10px; /*Espaçamento com o texto abaixo*/
+}
+
+
+#maisT, #menosT{
+    display: block;
+    margin-top: 20px; /*Distânciamento do texto acima*/
+    border-radius: 10px; /* Borda Curvada */
+    background-color: rgb(100, 95, 91); /*cor do Background do + e -*/
+    padding: 10px 20px; /*Espaçamento interno do + e - */
+    font-size: 20px; /* Tamanho da fonte doo + e - */
+    width: fit-content; /*Ficar do tamanho do conteúdo interno*/
+    height: fit-content; /*Ficar do tamanho do conteúdo interno*/
+    cursor: pointer; /*Ponteiro com aparência de seleção quando passa por cima*/
+    user-select: none; /*impede de selecionar o texto*/
+}
+
+.StartButton{
+    display: flex; /*Ajuste pro conteúdo ser flexível*/
+    justify-content: center; /* Centralizando o conteúdo*/
+    margin: 7px; /*Distânciamento do conteúdo acima*/
+    background-color: #b14141; /*cor do Background do texto*/
+    padding: 10px; /*Espaçamento interno do texto*/
+    border-radius: 10px; /* Arredondamento da borda*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra leve do container*/
+    cursor: pointer; /*Ponteiro com aparência de seleção quando passa por cima*/
+    user-select: none; /*impede de selecionar o texto*/
+}
+
+h1 {
+    text-align: center; /* Centraliza o texto do título */
+    color: #ffdd00; /* Cor do texto (amarelo) */
+    background-color: #cc0000; /* Fundo vermelho do título */
+    width: 100%; /* Faz o título ocupar toda a largura */
+    max-width: 800px; /* Mas não passa de 800px */
+    padding: 60px 0; /* Espaço interno no título */
+    margin: 20px 0 10px 0; /* Ajusta margens para "encaixar" com o body */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1); /* Sombra atrás */
+    font-size: 1.5em; /* Aumenta o tamanho da fonte */
+    border-radius: 200px 200px 0 0; /* Bordas arredondadas só no topo */
+}
+
+form {
+    background-color: rgba(255, 255, 255, 1); /* Fundo branco quase transparente */
+    padding: 20px 20px 90px 40px; /* Espaços internos */
+    border-radius: 0 0 200px 200px; /* Bordas arredondadas embaixo */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 1); /* Sombra */
+    max-width: 800px; /* Limita a largura do formulário */
+    width: 100%; /* Mas ocupa toda a largura disponível */
+    margin-top: 0; /* Remove a margem superior */
+}
+
+h2 {
+    color: #333; /* Cor do subtítulo */
+    margin-top: 25px; /* Espaço antes do h2 */
+    margin-bottom: 15px; /* Espaço depois do h2 */
+    font-size: 1.3em; /* Tamanho da fonte um pouco maior */
+}
+
+form h2:first-of-type {
+    margin-top: 0; /* Remove o espaço no primeiro h2 do formulário */
+}
+
+input[type="radio"] {
+    margin-right: 10px; /* Espaço ao lado do botão redondo */
+    transform: scale(1.1); /* Aumenta um pouco o tamanho do botão */
+}
+
+input[type="radio"] {
+    margin-bottom: 5px; /* Espaço embaixo dos botões */
+}
+
+button[type="button"] {
+    display: block; /* Faz o botão virar um bloco */
+    width: 50%; /* Botão ocupa toda a largura */
+    padding: 15px; /* Espaço interno */
+    margin-top: 30px; /* Espaço antes do botão */
+    margin-left: 25%; /*Centraliza o botão com o conteúdo*/ 
+    background-color: #ffde00; /* Cor de fundo do botão */
+    color: #333; /* Cor do texto do botão */
+    border: none; /* Remove borda padrão */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 1.1em; /* Aumenta um pouco o texto */
+    font-weight: bold; /* Deixa o texto mais forte */
+    cursor: pointer; /* Muda o cursor quando passa por cima */
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Animações suaves */
+}
+
+
+
+#SubAnsw:hover, #nextQ:hover {
+    background-color: #f0c800; /* Muda a cor quando passa o mouse */
+    transform: translateY(-2px); /* Levanta o botão um pouquinho */
+}
+
+#SubAnsw:active, #nextQ:active {
+    background-color: #e0b800; /* Cor quando o botão é clicado */
+    transform: translateY(0); /* Volta ao normal quando clicado */
+}
+
+#SubAnsw, #nextQ{
+    display: none; /*Esconde os botões pra só aparecer quando necessário pelo js*/
+}
+
+.shakeMenor{ /*Muda a cor do texto de Segundos pra vermelho*/ 
+    color: red;
+    animation: shakeAnim 0.3s ease;
+}
+
+.shakeMaior{ /*Muda a cor do texto de Segundos pra verde*/ 
+    color: green;
+    animation: shakeAnim 0.3s ease;
+}
+
+@keyframes shakeAnim{ /*Treme o texto de Segundos*/ 
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-3px); }
+    40% { transform: translateX(3px); }
+    60% { transform: translateX(-3px); }
+    80% { transform: translateX(3px); }
+    100% { transform: translateX(0); }
+}
+
+.QuestEnd{
+    font-family: arial, sans-serif; /*Organiza o tipo da fonte*/
+}
+
+#FimdoQ{
+    display: flex; /*Deixa o conteúdo flexível*/
+    justify-content: center; /*Organiza ele no centro*/
+    font-size: 40px; /* Ajusta tamanho da fonte em 40 pixeis*/
+    color: black; /*Colore a fonte com preto*/
+}
+
+#Pontuacao{
+    display: flex; /*Deixa o conteúdo flexível*/
+    justify-content: center; /*Organiza ele no centro*/
+    color: black; /*Colore a fonte com preto*/
+}
+
+#Result{
+    display: flex;/*Deixa o conteúdo flexível*/
+    justify-content: center; /*Organiza ele no centro e entre si*/
+    margin-top: 40px; /*Distânciamento do topo pelo texto*/
+    color: black; /*Colore a fonte com preto*/
+}
+
+#gaba{
+    color: rgb(255, 255, 255); /*Deixa a cor do texto preta*/
+}
+
+hr{
+    width: 98%; /* comprende largura disponível de 90% do bloco*/
+    border: none; /*Sem borda*/
+    height: 2px; /* Tamanho da altura da linha */
+    background-color: #000000; /*cor de fundo da linha*/
+    margin-bottom: 15px; /*Espaçamento entre ela e o texto abaixo*/
+    margin-top: 15px; /*Espaçamento entre ela e o texto acima*/
+}
+
+.RespCorreta{
+    color: rgb(99, 212, 99); /*A cor da resposta correta é verde no gabarito*/
+}
+
+#UserAnsw{
+    margin-bottom: 30px;
+    color: #490505; /*A cor da resposta errada é vermelha no gabarito*/
+}

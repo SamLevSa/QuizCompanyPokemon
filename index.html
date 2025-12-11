@@ -1,55 +1,55 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Quiz – The Pokémon Company</title>
-    <link rel="stylesheet" href="Style/style.css">
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-BR"> <!-- Início do documento HTML, idioma definido como português do Brasil -->
+<head> <!-- Cabeçalho do documento -->
+    <meta charset="UTF-8"> <!-- Define codificação como UTF-8 -->
+    <title>Quiz – The Pokémon Company</title> <!-- Título da aba do navegador -->
+    <link rel="stylesheet" href="Style/style.css"> <!-- Importa o arquivo CSS externo -->
 </head>
-<body>
 
-<h1>Quiz – Conhecimentos sobre a The Pokémon Company</h1>
+<body> <!-- Início do conteúdo visível da página -->
 
-<div class="timer">
-    <h3 id="textoConfig"> Configure seu temporizador antes de começar: </h3>
-    <p id="sec"> Segundos totais: 0s </p>
+<h1>Quiz – Conhecimentos sobre a The Pokémon Company</h1> <!-- Título principal do quiz -->
 
-    <div class="ControlarTempo">
-        <p id="menosT">-</p>
-        <p id="maisT">+</p>
+<div class="timer"> <!-- Div que contém toda a área do temporizador -->
+    <h3 id="textoConfig"> Configure seu temporizador antes de começar: </h3> <!-- Texto informativo -->
+    <p id="sec"> Segundos totais: 0s </p> <!-- Mostra os segundos selecionados -->
+
+    <div class="ControlarTempo"> <!-- Controles de + e - do temporizador -->
+        <p id="menosT">-</p> <!-- Botão de diminuir tempo -->
+        <p id="maisT">+</p> <!-- Botão de aumentar tempo -->
     </div>
 
-    <div class="StartButton">
-        <p> Começar Quiz</p>
+    <div class="StartButton"> <!-- Botão para iniciar o quiz -->
+        <p> Começar Quiz</p> <!-- Texto do botão -->
     </div>
 </div>
 
-<form>
-    
+<form> <!-- Início do formulário do quiz -->
+
         <!-- Pergunta 1 -->
-    <div class="question">
-        <h2>1. Em que ano a The Pokémon Company foi fundada?</h2>
-        <br>
-        <input type="radio" name="q1" value="A"> A) 1995 <br>
-        <input type="radio" name="q1" value="B"> B) 1996 <br>
-        <input type="radio" name="q1" value="C"> C) 1998 <br>
-        <input type="radio" name="q1" value="D"> D) 2000 <br>
-        <input type="radio" name="q1" value="E"> E) 2001 <br>
+    <div class="question"> <!-- Container de uma pergunta -->
+        <h2>1. Em que ano a The Pokémon Company foi fundada?</h2> <!-- Texto da pergunta -->
+        <br> <!-- Quebra de linha -->
+        <input type="radio" name="q1" value="A"> A) 1995 <br> <!-- Alternativa A -->
+        <input type="radio" name="q1" value="B"> B) 1996 <br> <!-- Alternativa B -->
+        <input type="radio" name="q1" value="C"> C) 1998 <br> <!-- Alternativa C -->
+        <input type="radio" name="q1" value="D"> D) 2000 <br> <!-- Alternativa D -->
+        <input type="radio" name="q1" value="E"> E) 2001 <br> <!-- Alternativa E -->
     </div>
 
-
     <!-- Pergunta 2 -->
-    <div class="question">
-        <h2>2. Qual empresa é uma das fundadoras da The Pokémon Company?</h2>
-        <br>
-        <input type="radio" name="q2" value="A"> A) SEGA <br>
-        <input type="radio" name="q2" value="B"> B) Ubisoft <br>
-        <input type="radio" name="q2" value="C"> C) Nintendo <br>
-        <input type="radio" name="q2" value="D"> D) Sony <br>
-        <input type="radio" name="q2" value="E"> E) EA Games <br>
+    <div class="question"> <!-- Container da pergunta 2 -->
+        <h2>2. Qual empresa é uma das fundadoras da The Pokémon Company?</h2> <!-- Texto da pergunta -->
+        <br> <!-- Quebra de linha -->
+        <input type="radio" name="q2" value="A"> A) SEGA <br> <!-- Alternativa A -->
+        <input type="radio" name="q2" value="B"> B) Ubisoft <br> <!-- Alternativa B -->
+        <input type="radio" name="q2" value="C"> C) Nintendo <br> <!-- Alternativa C -->
+        <input type="radio" name="q2" value="D"> D) Sony <br> <!-- Alternativa D -->
+        <input type="radio" name="q2" value="E"> E) EA Games <br> <!-- Alternativa E -->
     </div>
 
     <!-- Pergunta 3 -->
-    <div class="question">
+    <div class="question"> <!-- Container da pergunta 3 -->
         <h2>3. A The Pokémon Company é responsável principalmente por qual área?</h2>
         <br>
         <input type="radio" name="q3" value="A"> A) Desenvolvimento do Nintendo Switch <br>
@@ -58,8 +58,6 @@
         <input type="radio" name="q3" value="D"> D) Anime Dragon Ball <br>
         <input type="radio" name="q3" value="E"> E) Jogos do Sonic <br>
     </div>
-
-
 
     <!-- Pergunta 4 -->
     <div class="question">
@@ -83,7 +81,6 @@
         <input type="radio" name="q5" value="E"> E) Londres <br>
     </div>
 
-
     <!-- Pergunta 6 -->
     <div class="question">
         <h2>6. Qual produto NÃO é gerenciado diretamente pela The Pokémon Company?</h2>
@@ -106,7 +103,6 @@
         <input type="radio" name="q7" value="E"> E) Konami <br>
     </div>
 
-
     <!-- Pergunta 8 -->
     <div class="question">
         <h2>8. Qual é a principal função da Pokémon Center Company?</h2>
@@ -117,7 +113,6 @@
         <input type="radio" name="q8" value="D"> D) Criar consoles <br>
         <input type="radio" name="q8" value="E"> E) Criar filmes live-action <br>
     </div>
-
 
     <!-- Pergunta 9 -->
     <div class="question">
@@ -141,22 +136,23 @@
         <input type="radio" name="q10" value="E"> E) Studio Pierrot <br>
     </div>
 
-    <section class="question QuestEnd">
-        <h2 id="FimdoQ"> Fim do Questionário! </h2>
-        <h3 id="Pontuacao"> Pontuação: 0 pontos </h3>
+    <section class="question QuestEnd"> <!-- Seção final mostrando pontuação -->
+        <h2 id="FimdoQ"> Fim do Questionário! </h2> <!-- Texto final -->
+        <h3 id="Pontuacao"> Pontuação: 0 pontos </h3> <!-- Pontuação final -->
     </section>
 
-    <br><br>
-    <button type="button" id="nextQ">Próxima Pergunta</button>
+    <br><br> <!-- Espaçamento -->
+    <button type="button" id="nextQ">Próxima Pergunta</button> <!-- Botão para próxima pergunta -->
 
-</form>
-<section class="question gabarito">
-    <h2 id="gaba"> Gabarito </h2>
+</form> <!-- Fim do formulário -->
 
-    <hr>
-    <p> Questão 1 - Em que ano a The Pokémon Company foi fundada?</p>
-    <p class="RespCorreta"> Resposta correta: C) 1998 </p>
-    <p class="UserAnsw" id="suaResp1">Sua Reposta: </p>
+<section class="question gabarito"> <!-- Seção do gabarito -->
+    <h2 id="gaba"> Gabarito </h2> <!-- Título do gabarito -->
+
+    <hr> <!-- Linha divisória -->
+    <p> Questão 1 - Em que ano a The Pokémon Company foi fundada?</p> <!-- Descrição da questão -->
+    <p class="RespCorreta"> Resposta correta: C) 1998 </p> <!-- Mostra resposta correta -->
+    <p class="UserAnsw" id="suaResp1">Sua Reposta: </p> <!-- Mostra resposta que o usuário marcou -->
 
     <hr>
 
@@ -212,8 +208,8 @@
     <p class="RespCorreta"> Resposta correta: C) OLM, Inc.</p>
     <p class="UserAnsw" id="suaResp10">Sua Reposta: </p>
 
-</section>
+</section> <!-- Fim da seção do gabarito -->
 
-</body>
-<script src="Script/script.js"></script>
-</html>
+</body> <!-- Fim do corpo -->
+<script src="Script/script.js"></script> <!-- Importa o arquivo JavaScript -->
+</html> <!-- Fim do documento HTML -->
